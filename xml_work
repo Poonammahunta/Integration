@@ -1,0 +1,30 @@
+#Python script to extract XML data from a xml file
+import xml.etree.ElementTree as pm
+
+tree = pm.parse("D:\\python_work\\poo.xml")
+
+root = tree.getroot()
+'''for child in root:
+    print child.tag, child.attrib
+
+for i in root.iter("neighbor"):
+    print i.attrib
+
+for j in root.findall("country"):
+    rank = j.find("rank").text
+    name = j.get('name')
+    print name
+for rank in root.iter("rank"):
+    new_rank = int(rank.text)+1
+    rank.text = str(new_rank)
+    rank.set("updated","yes")
+tree.write("D:\\python_work\\poo.xml")
+
+for k in root.findall("country"):
+    rank = int(k.find("rank").text)
+    if rank > 50:'''
+root.remove("year"")
+tree.write("D:\\python_work\\poo.xml")
+
+
+

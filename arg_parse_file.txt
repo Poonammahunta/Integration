@@ -1,0 +1,6 @@
+ServerAliveInterval = 45
+Compression = yes
+CompressionLevel = 9
+ForwardX11 = yes
+poo is a good gal and that is what am expecting
+

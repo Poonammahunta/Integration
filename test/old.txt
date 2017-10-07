@@ -1,0 +1,7 @@
+Returns a string formatted according to the given format string using the given integer.
+timestamp or the current time if no timestamp is given. 
+In other words, timestamp is optional and defaults to the value of time().
+
+a = 10
+b=20
+c = "ssssss"

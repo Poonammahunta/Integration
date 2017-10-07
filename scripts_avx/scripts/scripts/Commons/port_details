@@ -1,0 +1,44 @@
+###################################################################################################
+###################################################################################################
+## If a port supports both TCP and UDP connection then make two different entries for the same port
+## For example if the port 1234 supports both TCP and UDP then the two entries would be like
+##
+## 1234        TCP         YES         YES         eth0            
+## 1234        UDP         YES         YES         eth0 
+##           
+####################################################################################################
+####################################################################################################
+
+PORT        TCP/UDP     INBOUND     OUTBOUND    INTERFACE       SERVICE_NAME        DESCRIPTION(optional)
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+22          TCP         YES         YES         eth0            SSH
+443         TCP         NO          YES         eth0            HTTPS
+
+2185        TCP         YES         YES         eth0            Hbase_Zookeeper
+4970        TCP         YES         YES         eth0            Tomcat
+5000        TCP         YES         YES         eth0            MongoDB
+5004        TCP         YES         YES         eth0            Web
+5555        TCP         YES         YES         eth0            Tomcat
+6000        TCP         YES         YES         eth0            Bigdata_iAgent
+6001        TCP         YES         YES         eth0            Bigdata_service
+6701        TCP         YES         YES         eth0            Bigdata_iAgent
+6901        TCP         YES         YES         eth0            Bigdata_service
+7300        TCP         YES         YES         eth0            Gateway
+8005        TCP         YES         YES         eth0            Tomcat
+8009        TCP         YES         YES         eth0            Tomcat
+8103        TCP         YES         YES         eth0            Bigdata_service
+8104        TCP         YES         YES         eth0            Bigdata_iAgent
+9000        TCP         YES         YES         eth0            HDFS_Service
+9001        TCP         YES         YES         eth0            Job_tracker_Service
+50010       TCP         YES         YES         eth0            Data_node_Server_service
+50020       TCP         YES         YES         eth0            Hadoop_Datanode_for_DFS_transfer
+50030       TCP         YES         YES         eth0            Jobt_racker_web
+50060       TCP         YES         YES         eth0            Task_tracker_web
+50070       TCP         YES         YES         eth0            Name_mode_web
+50075       TCP         YES         YES         eth0            Data_node_web
+50090       TCP         YES         YES         eth0            Secondary_name_mode_web
+60000       TCP         YES         YES         eth0            Hbase_Master
+60010       TCP         YES         YES         eth0            Hbase_Master_info
+60020       TCP         YES         YES         eth0            Region_server_Service
+60030       TCP         YES         YES         eth0            Hbase_region_server_info_port
