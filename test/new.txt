@@ -1,3 +1,0 @@
-Returns a string formatted according to the given format string using the given integer.
-noboundary or the current time if no noboundary is given. 
-In other words, noboundary is optional and defaults to the value of time().
