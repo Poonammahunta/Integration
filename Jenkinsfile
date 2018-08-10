@@ -1,13 +1,15 @@
 pipeline {
-	agent any
-	stages {
-		stage ('build') {
-			echo 'This is purnima'
-		}
-		stage ('test: integration-&-quality') {
-			input ('Do you want to proceed?')
-		}
-	}
+  agent any
+  stages {
+    stage('HelloWorld') {
+      steps {
+        echo 'Hello World'
+      }
+    }
+    stage('git clone') {
+      steps {
+        input('Do you want to proceed?')
+      }
+    }
+  }
 }
-
-         
