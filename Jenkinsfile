@@ -13,7 +13,7 @@ pipeline {
     }
     stage('three') {
       steps {
-        git clone "https://github.com/Poonammahunta/hello_world.git"
+        echo 'Completed'
       }
     }
   }
