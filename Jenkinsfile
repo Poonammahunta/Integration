@@ -1,14 +1,13 @@
 pipeline {
-  agent any
-  stages {
-    stage('Build') {
-      echo "Build Started"
-       }
-    stage('Integration') {
-      steps {
-          input('Do you want to Continue?')
-           }
-    }
-  }
+	agent any
+	stages {
+		stage ('build') {
+			echo 'This is purnima'
+		}
+		stage ('test: integration-&-quality') {
+			input ('Do you want to proceed?')
+		}
+	}
 }
+
          
