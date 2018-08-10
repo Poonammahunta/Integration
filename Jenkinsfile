@@ -1,15 +1,17 @@
 pipeline {
   agent any
   stages {
-    stage('HelloWorld') {
-      steps {
-        echo 'Hello World'
-      }
+    stage ('Build') {
+      echo 'Building Now'
     }
-    stage('git clone') {
+    stage ('Test') {
+      input('Do you want to proceed?')
+    }
+    stage ('Artifact') {
       steps {
-        input('Do you want to proceed?')
+        git clone "https://github.com/Poonammahunta/hello_world.git"
       }
     }
   }
-}
+}  
+    
