@@ -1,12 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('One') {
       steps {
         echo 'This is cloning repo!!!'
       }
     }
-    stage('Test') {
+    stage('Two') {
       steps {
         input('Do u want to proceed?')
       }
