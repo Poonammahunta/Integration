@@ -2,10 +2,14 @@ pipeline {
   agent any
   stages {
     stage('one') {
-      echo 'Building Now'
+      steps {
+        echo 'Building Now'
+      }  
     }
     stage('two') {
-      input('Do you want to proceed?')
+      steps {
+        input('Do you want to proceed?')
+      }  
     }
     stage('three') {
       steps {
@@ -13,5 +17,6 @@ pipeline {
       }
     }
   }
-}  
+}
+
     
