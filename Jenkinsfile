@@ -6,12 +6,13 @@ pipline{
       }
     stage('Integration'){
       steps{
-        step 1{
+        step one{
           input('Do you want to Continue?')
         }
-        step 2{
+        step two{
           echo "Now over"
         }
         }
         }
         }
+}
