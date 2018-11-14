@@ -12,4 +12,4 @@ else:
     for root,dirs,files in os.walk(os.path.join(current_dir,var)):
         s = [files if files.endswith('.pdf')]
         list_duplicate.append(s)        
-    print list_duplicate
+    #print list_duplicate
